@@ -70,7 +70,7 @@ nav {
 }
 
 .navButtons {
-    width: 34vw;
+    width: 100%;
     background-color: var(--gray);
 }
 
