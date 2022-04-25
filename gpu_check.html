@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html>   
+<head>     
+	<meta name="apple-mobile-web-app-capable" content="yes">    
+	<meta name="apple-mobile-webapp-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, user-scalable=no" >     
+    <title>Selaptop</title>     
+	<link rel="stylesheet" href="assets\css\main.css">
+</head> 
+
+<body>
+
+    <script>
+        var green = "#1F7622";
+        var orange = "#FD7E35";
+        var gray = "#8D8D92";
+        function integratedClicked () {
+            document.getElementById("integrated").style.backgroundColor = orange;
+            document.getElementById("discrete").style.visibility="hidden";
+            document.getElementById("solution").innerHTML = "Not quite! Video editing software can use a lot of resources, so Paul would be much happier with a <strong> dedicated GPU. </strong>";
+            document.getElementById("retry").style.visibility="visible"
+        }
+
+        function discreteClicked() {
+            document.getElementById("integrated").style.visibility="hidden";
+            document.getElementById("discrete").style.backgroundColor = orange;
+            document.getElementById("solution").innerHTML = "Nice job! Video editing software can use a lot of resources, so Paul would be much happier with a <strong>dedicated GPU</strong>";
+        }
+
+    </script>
+    
+    <div id="content">
+
+        <h1>Selaptop</h1>
+        <h2>GPU: </br> Graphical Processing Unit </br> Knowledge Check</h2>
+
+        <p>Paul is looking to buy a new laptop. Paul is a programmer who also enjoys making and editing movies in his spare time. Should he get a laptop with an integrated or discrete GPU?</p>
+        
+        <table>
+            <tr><td><button class="kButton" id="integrated" onClick="integratedClicked();">Integrated</button></td></tr>
+            <tr><td><button class="kButton" id="discrete" onCLick="discreteClicked();">Discrete</button></td></tr>
+        </table>
+        </br>
+        <div id="solution"></div>
+        </br>
+        <button class="retry" id="retry" onClick="location.href='gpu_check.html'">Try again!</button>
+
+    </div>
+    
+    <nav>
+        <button class="navButtons" onClick="location.href='learning.html';">Learn About Laptop Components</button>
+        <button class="navButtons" onClick="location.href='index.html';">Home</button>
+        <button class="navButtons" onClick="location.href='reccomendations.html';">Get a Laptop Reccomendation</button>
+    </nav>
+    
+</body>

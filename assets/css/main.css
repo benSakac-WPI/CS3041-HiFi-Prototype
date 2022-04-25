@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap');
+
+:root {
+    --green: #1F7622;
+    --orange: #FD7E35;
+    --gray: #8D8D92;
+}
+
+body {
+    font-family: 'Libre Bodoni', serif;
+    font-size: 16px;
+    background-color: var(--green);
+}
+
+#content {
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.centerText {
+    text-align: center;
+}
+.centerImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+}
+
+.flex-columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.indexButtons {
+    height: 15vh;
+    width:50vw;
+    margin-bottom: 2vh;
+    background-color: var(--gray);
+    border-radius: 2em;
+}
+
+.indexButtons:active {
+    background-color: var(--orange);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right:0;
+}
+
+.navContainer {
+    position:absolute
+}
+
+.navButtons {
+    width: 34vw;
+    background-color: var(--gray);
+}
+
+.navButtons:active {
+    background-color: var(--orange);
+}
+
+a {
+    color: var(--orange)
+}
+
+ul {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 2vh;
+    list-style-type: none;
+    border: 2px solid black;
+    border-radius: 2em;
+    text-align: center;
+    background-color: var(--gray);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li:active {
+    background-color: var(--orange);
+}
+
+li a:active {
+    color: black
+}
+
+.knowledge {
+    height: fit-content;
+    padding: 1em;
+    width:50vw;
+    margin-bottom: 8vh;
+    background-color: var(--gray);
+    border-radius: 2em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.knowledge:active {
+    background-color: var(--orange);
+}
+
+table {
+    display: flex;
+    justify-content: center;
+}
+.kButton {
+    background-color: var(--gray);
+    border: 2px solid black;
+    border-radius: 2em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 50vw;
+}
+
+.kButton:active {
+    background-color: var(--orange);
+}
+
+#solution {
+    font-style: italic;
+}
+
+.retry {
+    background-color: var(--gray);
+    border: 2px solid black;
+    border-radius: 2em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 50vw;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    visibility: hidden;
+}
+
+.retry:active {
+    background-color: var(--orange);
+}
