@@ -16,6 +16,7 @@ body {
 #content {
     padding-right: 2em;
     padding-left: 2em;
+    color:white;
 }
 
 h1 {
@@ -165,5 +166,22 @@ table {
 }
 
 .retry:active {
+    background-color: var(--orange);
+}
+
+.submit {
+    background-color: var(--gray);
+    border: 2px solid black;
+    border-radius: 2em;
+    text-align: center;
+    padding: 1em;
+    padding-bottom: 1em;
+    width: 55vw;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.submit:active {
     background-color: var(--orange);
 }

@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html>   
+<head>     
+	<meta name="apple-mobile-web-app-capable" content="yes">    
+	<meta name="apple-mobile-webapp-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, user-scalable=no" >     
+    <title>Selaptop</title>     
+	<link rel="stylesheet" href="assets/css/main.css">
+</head> 
+
+<body onLoad="initBody();">
+
+    <script>
+        function initBody () {
+            var p = sessionStorage.getItem("price");
+            document.getElementById("price").innerHTML = "<strong>Price</strong>: $" + p; 
+            document.getElementById("manufacturer").innerHTML = "<strong>Manufacturer</strong>: Laptops LLC";
+            if (p > 1200) {
+                document.getElementById("model").innerHTML = "<strong>Model</strong>: A17 Notebook";
+                document.getElementById("link").innerHTML = "Explore the A17 Notebook";
+            } else if (p > 800) {
+                document.getElementById("model").innerHTML = "<strong>Model</strong>: A16 Notebook";
+                document.getElementById("link").innerHTML = "Explore the A16 Notebook";
+            } else if (p > 400) {
+                document.getElementById("model").innerHTML = "<strong>Model</strong>: A15 Notebook";
+                document.getElementById("link").innerHTML = "Explore the A15 Notebook";
+            } else {
+                document.getElementById("model").innerHTML = "<strong>Model</strong>: A14 Notebook";
+                document.getElementById("link").innerHTML = "Explore the A14 Notebook";
+            }
+            
+        }
+    </script>
+    
+    <div id="content">
+
+        <h1>Selaptop</h1>
+
+        <h2>Here's your reccomendation:</h2>
+
+        <img src="assets/images/laptop.png" class="centerImage">
+
+        <p id="manufacturer"></p>
+        <p id="model"></p>
+        <p id="price"></p>
+        <a href="#" id="link"></a>
+        <p style="font-size: 10px">*Not a real link</p>
+
+
+    </div>
+    
+    <nav>
+        <button class="navButtons" onClick="location.href='learning.html';">Learn About Laptop Components</button>
+        <button class="navButtons" onClick="location.href='index.html';">Home</button>
+        <button class="navButtons" onClick="location.href='reccomendations.html';">Get a Laptop Reccomendation</button>
+     </nav>
+    
+</body>

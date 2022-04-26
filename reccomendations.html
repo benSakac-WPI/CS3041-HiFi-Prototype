@@ -9,6 +9,15 @@
 </head> 
 
 <body>
+
+    <script>
+        function submitClicked () {
+            //Get budget selection and store it for use on results page
+            var budget = document.querySelector('input[name = "budget"]:checked').value;
+            sessionStorage.setItem("price", budget);
+
+        }
+    </script>
     
     <div id="content">
 
@@ -16,19 +25,31 @@
 
         <p class="centerText">Fill out this short questionnaire about how you will use you new laptop to get a reccomendaion! </br> The reccomendation you get after filling out the questionnaire is unlikely to be a perfect match, but it will be a good starting point for your own research. </p>
 
-        <form>
+        <form action="result.html" method="POST">
             <legend>What is your budget?</legend>
-                <label><input type="radio" name="budget" value="1" required> $400 or less </label>
+                <label><input type="radio" name="budget" value="389" required> $400 or less </label>
                 </br>
-                <label><input type="radio" name="budget" value="2"> $400 - $800 </label>
+                <label><input type="radio" name="budget" value="759"> $400 - $800 </label>
                 </br>
-                <label><input type="radio" name="budget" value="3"> $800 - $1200 </label>
+                <label><input type="radio" name="budget" value="1099"> $800 - $1200 </label>
                 </br>
-                <label><input type="radio" name="budget" value="4"> $1200 or more </label>
+                <label><input type="radio" name="budget" value="1499"> $1200 or more </label>
             </br>
             </br>
             <legend>What will you most often use your laptop for?</legend>
-
+                <label><input type="radio" name="usage" value="5" required> Office tasks like creating word documents and working with spreadsheets </label>
+                </br>
+                <label><input type="radio" name="usage" value="6"> Video games </label>
+                </br>
+                <label><input type="radio" name="usage" value="7"> Using the internet </label>
+                </br>
+                <label><input type="radio" name="usage" value="8"> Photoshop and/or video editing </label>
+            <br>
+            <br>
+            <a href="results.html">
+                <input class="submit" type="submit" value="Show me my reccomendation!" onClick="submitClicked();">
+            </a>
+            
         </form>
 
     </div>
