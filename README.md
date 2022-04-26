@@ -8,6 +8,8 @@ The prototype is hosted using Github Pages, and can be viewed [here](https://ben
 
 It was designed for mobile devices, and is best viewed on a phone. However, if you are using a desktop or laptop, you can utilize your browsers developer tools to simulate a mobile device. 
 
+\*Disclaimer* Since this is only a prototype, some features have limited and/or simulated functionality.
+
 Instructions for accessing dev tools in Google Chrome:
 
 - View -> Developer Tools -> Developer Tools (you can also do *ctrl+shift+i* or *Right-click on the page>inspect*
